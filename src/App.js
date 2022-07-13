@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RegistrationForm from "./components/RegistrationForm";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   const [isUserRegistered, setIsUserRegistered] = useState(true);
@@ -8,6 +9,7 @@ function App() {
   }
   return (
     <div className="container">
+      {isUserRegistered && <LoginForm />}
       {!isUserRegistered && <RegistrationForm />}
 
       {isUserRegistered && (
