@@ -17,7 +17,7 @@ function LoginForm() {
   };
 
   return (
-    <form className="form">
+    <form className="loginform">
       <input
         type="text"
         placeholder="Username"
